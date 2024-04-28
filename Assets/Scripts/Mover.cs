@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Vector3 _startPosition = new Vector3 (-2.5f, 0, 0);
+    [SerializeField] private Vector3 _endPosition = new Vector3 (2.5f, 0, 0);
+    [SerializeField] private int _stepsCount = 10;
 
-    // Update is called once per frame
-    void Update()
+
+
+    private void Start()
     {
         
     }
