@@ -36,11 +36,9 @@ public class RedefinedMover : MonoBehaviour
     {
         Vector3 distance = start - end;
         Vector3 stepValue = distance / steps;
-        Vector3 currentStep = stepValue;
-
         for (int step = 1; step <= steps; step++)
         {
-            currentStep = stepValue * step;
+            Vector3 currentStep = stepValue * step;
             transform.position = start - currentStep;
             yield return null;
         }
